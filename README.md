@@ -1,2 +1,12 @@
-# snake_on_snake
-Mini-game on python3
+# Snake on snake.
+#### Video Demo: https://youtu.be/1hBCNVTusmI
+#### Description 
+Snake is one of the most popular arcade games of all time. In this game, the main goal of the player is to catch the maximum number of fruits without hitting the wall. The Snake on a Snake project is implemented using the pygame library, as well as using the time and random libraries. The Pygame library consists of Python constructs and includes several modules, such as: display, joystick and others. The main file is the basis of this project.py and he's the only one. It stores the main code in which the following are implemented: creating a screen, creating the snake itself, moving the snake, randomly adding food and increasing the length of the snake. 
+	Two functions are implemented in this file: 
+To create a playing field, use the display.set_mode() function and pass the window size. You also need to use the init() and quit() methods to initialize the library at the beginning of the code and deinitialize it at the end of the code. Also at the beginning of the code, we create various variables for color, window sizes, snake sizes, and objects for tracking time. 
+To create a snake, the rectangle creation function draw.rect() was used, since a snake is a rectangle. It allows you to set the size, color of the rectangle and its initial coordinates x1 and y1, the same variables are also created, but with the addition “change” in the while loop, it will be assigned values for changing the position of the snake along the x axis
+. To change the length of the snake, a list of snake_List is implemented, which will store the current length of the snake and snake_Head = [] a list in which the indicator of the length of the snake will be stored during movements. 
+To create food for the snake, the rectangle creation function draw.rect() and the random library were used so that it appeared in a random place on the playing field. The variables foodx and foody indicate the location of food on the x and y axis.
+A special Pygame keydown class is used to describe the movement of the snake. Which allows you to use four standard events, receiving them from the keyboard: k_up, k_down, k_left and k_right. The pitch of this event is 10 pixels. To do this, the event pygame module is used to interact with events with the get method, which returns all events to the terminal.  
+	Death is also implemented in line 62 if the coordinates of the snake are larger than the size of the window.
+	As a result, this game does not have any practical usefulness, but there are some buns, the Snake game: it helps to relieve stress, improves brain function
